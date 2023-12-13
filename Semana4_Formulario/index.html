@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pacote Turístico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="pacoteForm">
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" required>
+
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" required>
+
+        <label for="duracao">Duração:</label>
+        <input type="text" id="duracao" required>
+
+        <label for="imagem">URL da Imagem:</label>
+        <input type="url" id="imagem" required>
+
+        <button type="button" onclick="inserirPacote()">Inserir</button>
+    </form>
+
+    <hr>
+
+    <div class="container-destinos"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
