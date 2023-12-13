@@ -1,0 +1,123 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.card-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 20px;
+    justify-content: center;
+    color: #6728fa;
+    font-weight: bold;
+}
+
+.card {
+    width: 100%;
+    max-width: 200px;
+    background-color: #EBE5F9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+header img {
+    padding: 10px;
+    width: 11rem;
+    height: 9rem;
+    border-bottom: 1px solid #ddd;
+}
+
+header h3 {
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+ul li {
+    padding: 8px 0;
+    margin-left: 15px;
+    font-family: "OpenSans";
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: '\2713'; 
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+div {
+    margin-top: 10px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+span {
+    display: block;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #2ced32;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #1faa1f; /* Nova cor ao passar o mouse */
+    cursor: pointer; /* Mudança de cursor ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.95); /* Efeito de escala ao clicar */
+}
+
+@media screen and (min-width: 1200px) {
+    .card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
